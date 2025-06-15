@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rubik's Cube</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: sans-serif; }
+    #controls { position: absolute; top: 10px; left: 10px; z-index: 10; }
+    button { margin: 2px; padding: 6px 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button onclick="handleMove('U')">U</button>
+    <button onclick="handleMove("U'")">U'</button>
+    <button onclick="handleMove('R')">R</button>
+    <button onclick="handleMove("R'")">R'</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/Tween.min.js"></script>
+  <script src="js/core/rotate.js"></script>
+  <script src="js/input/move-handler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
